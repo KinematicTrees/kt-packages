@@ -20,7 +20,7 @@ docker run --rm \
       --modules model-loader,viewer-runtime,ik-runtime,ik-control \
       --install-root '"$INSTALL_ROOT"'
 
-    KT_HOME='"$INSTALL_ROOT"' '"$INSTALL_ROOT"'/bin/kt-run-module model-loader 0.1.0 --help >/tmp/model-loader.out 2>&1 || true
+    timeout 3s KT_HOME='""' '""'/bin/kt-run-module model-loader 0.1.0 >/tmp/model-loader.out 2>    KT_HOME='"$INSTALL_ROOT"' '"$INSTALL_ROOT"'/bin/kt-run-module model-loader 0.1.0 --help >/tmp/model-loader.out 2>&1 || true1 || true
     NODE_BIN=$(find '"$INSTALL_ROOT"'/runtime -type f -path "*/bin/node" | head -n1)
     "$NODE_BIN" --version
     test -f '"$INSTALL_ROOT"'/modules/model-loader/0.1.0/linux-x64/processes/p1-loader/src/main.mjs
