@@ -1,0 +1,3 @@
+# Keep release folders but not temp files
+**/.DS_Store
+**/*.tmp
