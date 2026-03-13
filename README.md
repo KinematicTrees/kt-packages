@@ -1,17 +1,21 @@
 # kt-packages
 
-Private shadow package repository for Kinematic Trees module releases.
+Public package repository for Kinematic Trees module releases.
 
-## Purpose
-- Stores release artifacts only (no source code).
-- Will become public once packaging/release flow is stable.
+## What this repo is for
+- Publishing versioned module release artifacts.
+- Providing a consistent layout for package consumers and tooling.
+- Keeping release docs alongside each module version.
 
-## Structure
+## Repository structure
 - `modules/<module>/docs/`
 - `modules/<module>/releases/<version>/`
 
-## Modules
+## Current modules
 - model-loader (P1)
 - viewer-runtime (P2)
 - ik-runtime (P3)
 - ik-control (P4)
+
+## Notes
+If you’re looking for source code, this repository is focused on packaged release outputs.
